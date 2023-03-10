@@ -1,11 +1,10 @@
 :root {
-	--primary: rgb(37, 23, 23);
-	--secondary: rgb(54, 41, 41);
-	--dark-grey: rgb(94, 81, 81);
-	--light-grey: rgb(205, 204, 204);
+	--primary: rgb(24, 247, 202);
+	--secondary: rgb(158, 245, 8);
+	--dark-grey: rgb(96, 96, 96);
+	--light-grey: rgb(153, 152, 152);
 	--white: rgb(255, 255, 255);
-	--my-red: rgb(184, 79, 58);
-	--cheddar: rgb(198, 147, 7);
+	--my-red: rgb(252, 44, 3);
 	scroll-behavior: smooth;
 }
 * {
@@ -15,5 +14,44 @@
 }
 body {
 	font-family: "roboto", sans-serif;
+	background-color: var(--white);
+}
+
+.container {
+	padding: 50px;
+}
+
+/* Navbar ******************************************************/
+.navbar-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: aqua;
+	padding: 10px 25px;
+	height: 70px;
+}
+.navbar-logo img {
+	width: 50px;
+}
+.navbar-links a {
+	text-decoration: none;
+	color: var(--dark-grey);
+	font-weight: bold;
+	margin: 0 10px;
+}
+.hamburguer-menu img {
+	width: 30px;
+}
+
+/* Home ****************************************************/
+.home-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 	background-color: var(--primary);
+	padding: 100px;
+	gap: 100px;
+}
+.home-container img {
+	width: 700px;
 }
